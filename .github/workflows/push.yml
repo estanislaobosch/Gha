@@ -1,0 +1,14 @@
+name: Push to Trunk
+
+on:
+  push:
+
+jobs:
+  variables:
+    name: 'Set runtime variables'
+    runs-on: stan-runners
+    steps:
+      - name: 'Hello Push'
+        id: helloWorld
+        run: |
+          echo "Hello World"
